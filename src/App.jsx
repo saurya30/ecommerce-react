@@ -5,6 +5,7 @@ import Checkout from "./pages/Checkout";
 import "./App.css";
 import Navbar from "./components/NavBar";
 import AuthProvider from "./context/AuthContext";
+import ProductDetails from "./pages/ProductDetails";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
         </Routes>
       </div>
     </AuthProvider>
